@@ -1,5 +1,5 @@
 import { Outlet } from "react-router"
-import { UserMenu } from "@/feautures/auth/ui/user-menu"
+import { UserMenu } from "@/features/auth/ui/user-menu"
 
 
 export function RootLayout() {
