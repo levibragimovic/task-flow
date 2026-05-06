@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import { AppProviders } from "@/app/providers/app-providers"
+
 
 async function prepare() {
   if (import.meta.env.VITE_ENABLE_MOCKS === 'true') {
@@ -13,7 +14,7 @@ async function prepare() {
 prepare().then(() => {
   createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <AppProviders />
   </StrictMode>,
 )
 })
